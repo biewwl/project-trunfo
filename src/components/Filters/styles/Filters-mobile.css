@@ -1,0 +1,11 @@
+@media screen and (max-width: 750px) {
+  .filters {
+    padding: 10px;
+  }
+
+  .filters label {
+    cursor: pointer;
+    font-size: 0.8em;
+    margin: 20px 10px;
+  }
+}

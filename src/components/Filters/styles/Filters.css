@@ -1,0 +1,73 @@
+.filters {
+  color: white;
+  padding: 40px 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #070918;
+  background-image: radial-gradient(
+      yellow,
+      rgba(255, 255, 0, 0.244) 2px,
+      transparent 40px
+    ),
+    radial-gradient(yellow,
+    rgba(255, 255, 0, 0.103) 2px, transparent 40px),
+    radial-gradient(
+      rgba(255, 255, 0, 0.431),
+      rgba(255, 255, 0, 0.084) 2px,
+      transparent 30px
+    );
+  background-size: 550px 550px, 350px 350px, 250px 250px, 150px 150px;
+  background-position: 0 0, 40px 60px, 130px 270px, 70px 100px;
+  width: 100vw;
+}
+
+.filters input[type="text"] {
+  padding: 8px;
+  color: white;
+  border-radius: 25px;
+  outline: none;
+  background: none;
+  border: 1px solid #B27BD9;
+}
+
+.filters input[type="text"]:disabled {
+  opacity: 0.2;
+}
+
+.filters input[type="radio"], .filters input[type="checkbox"] {
+  display: none;
+}
+
+.filters label {
+  cursor: pointer;
+  font-size: 0.8em;
+}
+
+.filters label svg {
+font-size: 1.5em;
+}
+
+.filters .selected {
+  color: #B27BD9;
+}
+
+.filters input + label {
+  color: red;
+}
+
+.trunfo-option {
+  display: flex;
+  align-items: center;
+}
+
+.trunfo-option.off svg {
+  color: red;
+  margin-left: 10px;
+}
+
+.trunfo-option.on svg {
+  color: rgb(0, 255, 195);
+  margin-left: 10px;
+}

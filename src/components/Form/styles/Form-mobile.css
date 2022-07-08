@@ -1,0 +1,13 @@
+@media screen and (max-width: 750px) {
+  
+  .create-container {
+    flex-direction: column;
+    height: auto;
+  }
+  
+  :is(.create-container) form,
+  .card-in-progress {
+    width: 100%;
+  }
+
+}

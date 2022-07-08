@@ -1,0 +1,305 @@
+@font-face {
+  font-family: "Product Sans";
+  src: url(../../../fonts/product-sans/Product\ Sans\ Regular.ttf);
+}
+
+@keyframes shine {
+  0% {
+    background-position-x: 200%;
+  }
+  50% {
+    background-position-x: -200%;
+  }
+  100% {
+    background-position-x: -200%;
+  }
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.create-container {
+  background-image: url(../../../images/background.jpg);
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+h1 {
+  font-family: "Product Sans";
+  font-size: 3rem;
+  color: white;
+  margin-bottom: 40px;
+}
+
+:is(.create-container) form,
+.card-in-progress {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+  width: 50%;
+}
+
+.create-container form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding-left: 10%;
+}
+
+.create-container input {
+  margin: 10px 0;
+  padding: 5px;
+  border: none;
+  outline: none;
+  border-radius: 0.2em;
+}
+
+.create-container input:disabled {
+  opacity: 0;
+}
+
+.create-container input[type="number"] {
+  width: 50px;
+  margin-left: 10px;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.card {
+  border-radius: 1em;
+  border: 10px solid white;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  font-family: "Product Sans", sans-serif;
+  font-weight: 100;
+  height: 390px;
+  justify-content: space-between;
+  padding: 10px;
+  position: relative;
+  width: 240px;
+  background-image: repeating-linear-gradient(
+      120deg,
+      rgba(255, 255, 255, 0.1),
+      rgba(255, 255, 255, 0.1) 1px,
+      transparent 1px,
+      transparent 60px
+    ),
+    repeating-linear-gradient(
+      60deg,
+      rgba(255, 255, 255, 0.1),
+      rgba(255, 255, 255, 0.1) 1px,
+      transparent 1px,
+      transparent 60px
+    ),
+    linear-gradient(
+      60deg,
+      rgba(0, 0, 0, 0.1) 25%,
+      transparent 25%,
+      transparent 75%,
+      rgba(0, 0, 0, 0.1) 75%,
+      rgba(0, 0, 0, 0.1)
+    ),
+    linear-gradient(
+      120deg,
+      rgba(0, 0, 0, 0.1) 25%,
+      transparent 25%,
+      transparent 75%,
+      rgba(0, 0, 0, 0.1) 75%,
+      rgba(0, 0, 0, 0.1)
+    );
+  background-size: 70px 120px;
+}
+
+.card::after, .card.card-trunfo::after {
+  animation: shine 3s infinite;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  background-image: linear-gradient(
+    -60deg,
+    transparent,
+    transparent 40%,
+    #ffffff44 40%,
+    #ffffff44 60%,
+    transparent 60%,
+    transparent 100%
+  );
+  background-size: 200% 100%;
+  background-repeat: no-repeat;
+  background-position-x: 200%;
+}
+
+.card.card-trunfo::after {
+  background-image: linear-gradient(
+    -60deg,
+    transparent,
+    transparent 40%,
+    #9a996968 40%,
+    #9a996968 60%,
+    transparent 60%,
+    transparent 100%
+  );
+}
+
+.card .name {
+  font-weight: 300;
+  height: 20px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 100%;
+}
+
+.card .description {
+  background-color: rgba(255, 255, 255, 0.092);
+  border-radius: 0.5em;
+  font-size: 0.6em;
+  font-style: italic;
+  height: 50px;
+  padding: 10px;
+  text-align: justify;
+}
+
+.card img {
+  border-radius: 0.5em;
+  height: 150px;
+  object-fit: cover;
+  width: 200px;
+}
+
+.card div {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card-common {
+  background-color: rgb(0, 128, 87);
+}
+
+.card-uncommon {
+  background-color: #315480;
+}
+
+.card-rare {
+  background-color: #6a5d13;
+}
+
+.card-epic {
+  background-color: #912424;
+}
+
+.card-legendary {
+  background-color: #53197f;
+}
+
+.card-trunfo {
+  background-color: #333;
+  color: #9a9969;
+  border-color: #9a9969;
+  box-shadow: 0 0 10px #9a9969;
+}
+
+.saved-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-gap: 40px;
+  padding: 20px;
+  background-color: #070918;
+  background-image: radial-gradient(
+      yellow,
+      rgba(255, 255, 0, 0.244) 2px,
+      transparent 40px
+    ),
+    radial-gradient(yellow,
+    rgba(255, 255, 0, 0.103) 2px, transparent 40px),
+    radial-gradient(
+      rgba(255, 255, 0, 0.431),
+      rgba(255, 255, 0, 0.084) 2px,
+      transparent 30px
+    );
+  background-size: 550px 550px, 350px 350px, 250px 250px, 150px 150px;
+  background-position: 0 0, 40px 60px, 130px 270px, 70px 100px;
+  width: 100vw;
+}
+
+.saved-cards .card {
+  justify-self: center;
+  transition: 0.5s;
+}
+
+.remove-card {
+  color: rgb(230, 79, 79);
+  cursor: pointer;
+  font-size: 1.6em;
+  opacity: 0.1;
+  position: absolute;
+  right: -20px;
+  top: -20px;
+}
+
+.remove-card svg {
+  background-color: white;
+  border-radius: 50%;
+}
+
+.card:hover > .remove-card {
+  opacity: 1;
+  transition: 0.5s;
+}
+
+.attr,
+.attr-value {
+  font-size: 0.8em;
+}
+
+.attr {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 100%;
+}
+
+.attr-value {
+  text-align: end;
+  padding: 0 2px;
+  margin-bottom: 5px;
+}
+
+.create-btn {
+  background-color: #b381da;
+  border-radius: 25px;
+  color: white;
+  cursor: pointer;
+  font-size: 0.8em;
+  padding: 8px 15px;
+  margin-top: 20px;
+  border: none;
+}
+
+.create-btn:disabled {
+  opacity: 0.3;
+  cursor: not-allowed;
+}
+
+.alert {
+  color: red;
+  padding: 5px 0;
+  font-size: 0.7em;
+}
