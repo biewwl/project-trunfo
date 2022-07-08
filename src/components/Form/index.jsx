@@ -6,7 +6,7 @@ import "./styles/Form-mobile.css";
 import { CardsContext } from "../../context/CardsContext";
 
 function Form() {
-  const { cards, setCards, filters, setFilters } = useContext(CardsContext);
+  const { cards, setCards } = useContext(CardsContext);
 
   const [formData, setFormData] = useState({
     name: "",

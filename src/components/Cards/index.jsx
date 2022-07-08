@@ -19,7 +19,7 @@ function Cards() {
     return sumAttr(card) === 100;
   };
 
-  const getSavedCards = () => lS("g", "biewwl-trunfo-cards");
+  const getSavedCards = () => lS("g", "biewwl-trunfo-cards") || [];
 
   const filteredCards = () => {
     let cards = [];
@@ -36,10 +36,9 @@ function Cards() {
       if (filters.sort === "weakest")
         cards = getSavedCards().sort((a, b) => sumAttr(a) - sumAttr(b));
     }
-    cards = cards.filter((card) => {
+    return cards.filter((card) => {
       return card.name.toLowerCase().includes(filters.name.toLowerCase());
     });
-    return cards;
   };
 
   return (
