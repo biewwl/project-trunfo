@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/project-trunfo/static/css/main.4a868da6.css",
+    "main.js": "/project-trunfo/static/js/main.6f6cddad.js",
+    "static/js/787.7e154a90.chunk.js": "/project-trunfo/static/js/787.7e154a90.chunk.js",
+    "static/media/background.jpg": "/project-trunfo/static/media/background.a149f8d2a42b3cead759.jpg",
+    "static/media/Product Sans Regular.ttf": "/project-trunfo/static/media/Product Sans Regular.d165384076551a756b3c.ttf",
+    "index.html": "/project-trunfo/index.html",
+    "main.4a868da6.css.map": "/project-trunfo/static/css/main.4a868da6.css.map",
+    "main.6f6cddad.js.map": "/project-trunfo/static/js/main.6f6cddad.js.map",
+    "787.7e154a90.chunk.js.map": "/project-trunfo/static/js/787.7e154a90.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4a868da6.css",
+    "static/js/main.6f6cddad.js"
+  ]
+}
