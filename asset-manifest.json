@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/project-trunfo/static/css/main.8dc9c4ed.css",
+    "main.css": "/project-trunfo/static/css/main.7143373f.css",
     "main.js": "/project-trunfo/static/js/main.f00afdc9.js",
     "static/js/787.7e154a90.chunk.js": "/project-trunfo/static/js/787.7e154a90.chunk.js",
-    "static/media/background.jpg": "/project-trunfo/static/media/background.bb5813490069eb796175.jpg",
+    "static/media/background.jpg": "/project-trunfo/static/media/background.af39a0b7d55444ae9ccb.jpg",
     "static/media/Product Sans Regular.ttf": "/project-trunfo/static/media/Product Sans Regular.d165384076551a756b3c.ttf",
     "index.html": "/project-trunfo/index.html",
-    "main.8dc9c4ed.css.map": "/project-trunfo/static/css/main.8dc9c4ed.css.map",
+    "main.7143373f.css.map": "/project-trunfo/static/css/main.7143373f.css.map",
     "main.f00afdc9.js.map": "/project-trunfo/static/js/main.f00afdc9.js.map",
     "787.7e154a90.chunk.js.map": "/project-trunfo/static/js/787.7e154a90.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.8dc9c4ed.css",
+    "static/css/main.7143373f.css",
     "static/js/main.f00afdc9.js"
   ]
 }
