@@ -5,7 +5,7 @@
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
-  background-color: #070918;
+  background-color: #210011;
   background-image: radial-gradient(
       yellow,
       rgba(255, 255, 0, 0.244) 2px,
@@ -29,7 +29,7 @@
   border-radius: 25px;
   outline: none;
   background: none;
-  border: 1px solid #B27BD9;
+  border: 1px solid #FF451C;
 }
 
 .filters input[type="text"]:disabled {
@@ -50,11 +50,7 @@ font-size: 1.5em;
 }
 
 .filters .selected {
-  color: #B27BD9;
-}
-
-.filters input + label {
-  color: red;
+  color: #FF451C;
 }
 
 .trunfo-option {
@@ -63,7 +59,7 @@ font-size: 1.5em;
 }
 
 .trunfo-option.off svg {
-  color: red;
+  color: #FF451C;
   margin-left: 10px;
 }
 

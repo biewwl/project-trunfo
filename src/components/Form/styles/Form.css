@@ -221,7 +221,7 @@ input[type="number"]::-webkit-outer-spin-button {
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   grid-gap: 40px;
   padding: 20px;
-  background-color: #070918;
+  background-color: #210011;
   background-image: radial-gradient(
       yellow,
       rgba(255, 255, 0, 0.244) 2px,
@@ -283,7 +283,7 @@ input[type="number"]::-webkit-outer-spin-button {
 }
 
 .create-btn {
-  background-color: #b381da;
+  background-color: #FF451C;
   border-radius: 25px;
   color: white;
   cursor: pointer;
