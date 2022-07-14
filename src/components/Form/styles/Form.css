@@ -20,7 +20,8 @@ body {
 }
 
 .create-container {
-  background-image: url(../../../images/background.jpg);
+  background-color: #330033;
+  background-image: url(./background.svg);
   display: flex;
   width: 100vw;
   height: 100vh;
@@ -123,7 +124,8 @@ input[type="number"]::-webkit-outer-spin-button {
   background-size: 70px 120px;
 }
 
-.card::after, .card.card-trunfo::after {
+.card::after,
+.card.card-trunfo::after {
   animation: shine 3s infinite;
   content: "";
   position: absolute;
@@ -221,21 +223,7 @@ input[type="number"]::-webkit-outer-spin-button {
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   grid-gap: 40px;
   padding: 20px;
-  background-color: #210011;
-  background-image: radial-gradient(
-      yellow,
-      rgba(255, 255, 0, 0.244) 2px,
-      transparent 40px
-    ),
-    radial-gradient(yellow,
-    rgba(255, 255, 0, 0.103) 2px, transparent 40px),
-    radial-gradient(
-      rgba(255, 255, 0, 0.431),
-      rgba(255, 255, 0, 0.084) 2px,
-      transparent 30px
-    );
-  background-size: 550px 550px, 350px 350px, 250px 250px, 150px 150px;
-  background-position: 0 0, 40px 60px, 130px 270px, 70px 100px;
+  background-color: black;
   width: 100vw;
 }
 
@@ -283,13 +271,13 @@ input[type="number"]::-webkit-outer-spin-button {
 }
 
 .create-btn {
-  background-color: #FF451C;
+  background-color: #454fc0;
   border-radius: 25px;
   color: white;
   cursor: pointer;
   font-size: 0.8em;
   padding: 8px 15px;
-  margin-top: 20px;
+  margin-top: 40px;
   border: none;
 }
 
